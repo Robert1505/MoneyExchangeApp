@@ -11,3 +11,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face{
+  font-family: 'Ranchers', cursive;
+  src: local('Ranchers'), url('./fonts/Ranchers-Regular.ttf') format('truetype');
+}
+
+@font-face{
+  font-family: 'Anton', sans-serif;
+  src: local('Anton'), url('./fonts/Anton-Regular.ttf') format('truetype');
+}
+
+.background{
+  background: rgb(211,255,0);
+  background: linear-gradient(180deg, rgba(211,255,0,1) 0%, rgba(255,128,0,1) 50%, rgba(255,0,0,1) 100%);
+  background-size : cover;
+  height: 100vh;
+}

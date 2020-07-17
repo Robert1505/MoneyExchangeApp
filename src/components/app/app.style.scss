@@ -1,0 +1,86 @@
+.moneyApp{
+    width: 500px;
+    height: 100vh;
+    margin: 0 auto;
+    color: white;
+
+    .title{
+        font-family: 'Ranchers', cursive;
+        text-align: center;
+        padding-top: 30px;
+        font-size: 55px;
+        padding-bottom: 50px;
+    }
+
+    .euros{
+        font-family: 'Anton', sans-serif;
+        border: 3px solid white;
+        border-radius: 7px;
+        text-align: center;
+        padding: 30px;
+        margin-bottom: 25px;
+        font-size: 25px;
+        background: rgb(72,0,255);
+        background: linear-gradient(90deg, rgba(72,0,255,1) 0%, rgba(132,0,255,1) 50%, rgba(171,0,255,1) 100%);
+    }
+
+    .dolars{
+        font-family: 'Anton', sans-serif;
+        border: 3px solid white;
+        border-radius: 7px;
+        text-align: center;
+        padding: 30px;
+        margin-bottom: 25px;
+        font-size: 25px;
+        background: rgb(72,0,255);
+        background: linear-gradient(90deg, rgba(72,0,255,1) 0%, rgba(132,0,255,1) 50%, rgba(171,0,255,1) 100%);
+    }
+
+    .canadiandolars{
+        font-family: 'Anton', sans-serif;
+        border: 3px solid white;
+        border-radius: 7px;
+        text-align: center;
+        padding: 30px;
+        margin-bottom: 25px;
+        font-size: 25px;
+        background: rgb(72,0,255);
+        background: linear-gradient(90deg, rgba(72,0,255,1) 0%, rgba(132,0,255,1) 50%, rgba(171,0,255,1) 100%);
+    }
+
+    .lira{
+        font-family: 'Anton', sans-serif;
+        border: 3px solid white;
+        border-radius: 7px;
+        text-align: center;
+        padding: 30px;
+        margin-bottom: 25px;
+        font-size: 25px;
+        background: rgb(72,0,255);
+        background: linear-gradient(90deg, rgba(72,0,255,1) 0%, rgba(132,0,255,1) 50%, rgba(171,0,255,1) 100%);
+    }   
+
+    .rubla{
+        font-family: 'Anton', sans-serif;
+        border: 3px solid white;
+        border-radius: 7px;
+        text-align: center;
+        padding: 30px;
+        margin-bottom: 25px;
+        font-size: 25px;
+        background: rgb(72,0,255);
+        background: linear-gradient(90deg, rgba(72,0,255,1) 0%, rgba(132,0,255,1) 50%, rgba(171,0,255,1) 100%);
+    }
+
+    .mdl{
+        font-family: 'Anton', sans-serif;
+        border: 3px solid white;
+        border-radius: 7px;
+        text-align: center;
+        padding: 30px;
+        margin-bottom: 25px;
+        font-size: 25px;
+        background: rgb(72,0,255);
+        background: linear-gradient(90deg, rgba(72,0,255,1) 0%, rgba(132,0,255,1) 50%, rgba(171,0,255,1) 100%);
+    }
+}
