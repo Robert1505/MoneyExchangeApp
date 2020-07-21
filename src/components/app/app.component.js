@@ -4,29 +4,59 @@ import Title from '../title/title.component';
 import Card from '../card/card.component';
 
 class App extends React.Component{
+    constructor(props){
+        super(props);
+        this.state = {
+            dataIsLoaded : false,
+            loadedData : null
+        };
+    }
+    getData = () =>{
+        fetch('http://data.fixer.io/api/latest?access_key=3a8158fa2c01f7eb14936d85590a28e2')
+        .then((response) => response.json())
+        .then((data) => this.setState({dataIsLoaded : true, loadedData : data}));
+    }
+    componentDidMount = () => {
+        this.getData();
+    }
+
     render(){
+        let ron;
+        let mdl;
+        let usd;
+        let gbp;
+        let rub;
+        let cad;
+        if(this.state.dataIsLoaded){
+            ron = this.state.loadedData.rates.RON;
+            mdl = this.state.loadedData.rates.MDL;
+            usd = this.state.loadedData.rates.USD;
+            gbp = this.state.loadedData.rates.GBP;
+            rub = this.state.loadedData.rates.RUB;
+            cad = this.state.loadedData.rates.CAD;
+        }
         return(
             <div className = "moneyApp">
                 <div className = "title">
                     <Title value = "Money Exchange"/>
                 </div>
                 <div className = "euros">
-                    <Card euro = "1 RON = 0.21 EUROS"/>
+                    <Card text = "1 EURO = " euro = {ron} moneda = " RON" />
                 </div>
                 <div className = "dolars">
-                    <Card dolar = "1 RON = 0.24 AMERICAN DOLARS"/>
+                    <Card text = "1 EURO = " dolar = {mdl} moneda = " MDL"/>
                 </div>
                 <div className = "canadiandolars">
-                    <Card canadian = "1 RON = 0.32 CANADIAN DOLARS"/>
+                    <Card text = "1 EURO = " canadian = {usd} moneda = " USD" />
                 </div>
                 <div className = "lira">
-                    <Card lira = "1 RON = 0.19 GBP"/>
+                    <Card text = "1 EURO = " lira = {gbp} moneda = " GBP" />
                 </div>
                 <div className = "rubla">
-                    <Card rubla = "1 RON = 16.92 RUB"/>
+                    <Card text = "1 EURO = " rubla = {rub} moneda = " RUB" />
                 </div>     
                 <div className = "mdl">
-                    <Card mdl = "1 RON = 4.03 MDL"/>
+                    <Card text = "1 EURO = " mdl = {cad} moneda = " CAD" />
                 </div>
             </div>
         );
